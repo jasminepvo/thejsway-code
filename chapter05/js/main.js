@@ -22,6 +22,7 @@ console.log(sayHello(firstName, lastName));
 Number squaring
 Complete the following program so that the square1() and square2() functions work properly.
 */
+/*
 // Square the given number x
 function square1(x) {
 	// TODO: complete the function code
@@ -45,15 +46,29 @@ for (let i = 0; i <= 10; i++) {
 }
 //Writing 10 dumb calls to square() is forbidden! You know how to repeat statements, don't you? ;)
 
+
 /*
 Minimum of two numbers
 Let's pretend the JavaScript Math.min() function doesn't exist. Complete the following program so that the min() function returns the minimum of its two received numbers.
-
+*/
 // TODO: write the min() function
+function min(n1, n2) {
+	if (n1 < n2) {
+		return n1;
+	} else if (n2 < n1) {
+		return n2;
+	} else if (n1 === n2) {
+		return n1;
+	} else {
+		return "Invalid";
+	}
+}
 
 console.log(min(4.5, 5)); // Must show 4.5
-console.log(min(19, 9));  // Must show 9
-console.log(min(1, 1));   // Must show 1
+console.log(min(19, 9)); // Must show 9
+console.log(min(1, 1)); // Must show 1
+
+/*
 Calculator
 Complete the following program so that it offers the four basic arithmetical operations: addition, subtraction, multiplication and division. You can use either a function declaration or a function expression.
 
