@@ -75,7 +75,7 @@ Complete the following program so that it offers the four basic arithmetical ope
 */
 
 // TODO: complete program
-
+/*
 const calculate = (n1, operation, n2) => {
 	if (operation === "+") {
 		return n1 + n2;
@@ -104,6 +104,17 @@ Here are some tips for solving this exercise:
 Circumference and area calculation formulas should be part of your secondary school memories... Or a Google click away :)
 The value of number π (Pi) is obtained with Math.PI in JavaScript.
 You might want to use the exponentiation operator ** to perform computations.
+*/
+
 console.log(2 ** 3); // 8: 2 * 2 * 2
 console.log(3 ** 2); // 9: 3 * 3
-*/
+
+// fat arrow function with bracket
+const circumferenceOfCircle = (radius) => {
+	return 2 * Math.PI * radius;
+};
+console.log(circumferenceOfCircle(10)); // ~62.83
+
+// fat arrow function without bracket because there is only one statement in the function body
+const areaOfCircle = (radius) => Math.PI * radius ** 2;
+console.log(areaOfCircle(5)); //~78.54
