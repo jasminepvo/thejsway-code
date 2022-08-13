@@ -27,7 +27,14 @@ Modeling a dog
 Complete the following program to add the dog object definition.
 */
 // TODO: create the dog object here
-
+const dog = {
+	name: "Peter",
+	species: "rottweiler",
+	size: "80lbs",
+	bark() {
+		return `Grrr! Grrr!`;
+	},
+};
 console.log(`${dog.name} is a ${dog.species} dog measuring ${dog.size}`);
 //Peter is a rottweiler dog measuring 80lbs
 console.log(`Look, a cat! ${dog.name} barks: ${dog.bark()}`);
