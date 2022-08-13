@@ -3,7 +3,6 @@ Coding time!
 Improved hello
 Complete the following program so that it asks the user for his first and last names, then show the result of the sayHello() function.
 */
-/*
 // Say hello to the user
 function sayHello(firstName, lastName) {
 	const message = `Hello, ${firstName} ${lastName}!`;
@@ -17,12 +16,10 @@ let lastName = prompt("What is your last name?");
 // TODO: call sayHello() and show its result
 console.log(sayHello(firstName, lastName));
 
-
 /*
 Number squaring
 Complete the following program so that the square1() and square2() functions work properly.
 */
-/*
 // Square the given number x
 function square1(x) {
 	// TODO: complete the function code
@@ -46,12 +43,10 @@ for (let i = 0; i <= 10; i++) {
 }
 //Writing 10 dumb calls to square() is forbidden! You know how to repeat statements, don't you? ;)
 
-
 /*
 Minimum of two numbers
 Let's pretend the JavaScript Math.min() function doesn't exist. Complete the following program so that the min() function returns the minimum of its two received numbers.
 */
-/*
 // TODO: write the min() function
 function min(n1, n2) {
 	if (n1 < n2) {
@@ -75,7 +70,6 @@ Complete the following program so that it offers the four basic arithmetical ope
 */
 
 // TODO: complete program
-/*
 const calculate = (n1, operation, n2) => {
 	if (operation === "+") {
 		return n1 + n2;
