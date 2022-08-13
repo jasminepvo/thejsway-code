@@ -51,6 +51,7 @@ for (let i = 0; i <= 10; i++) {
 Minimum of two numbers
 Let's pretend the JavaScript Math.min() function doesn't exist. Complete the following program so that the min() function returns the minimum of its two received numbers.
 */
+/*
 // TODO: write the min() function
 function min(n1, n2) {
 	if (n1 < n2) {
@@ -71,13 +72,30 @@ console.log(min(1, 1)); // Must show 1
 /*
 Calculator
 Complete the following program so that it offers the four basic arithmetical operations: addition, subtraction, multiplication and division. You can use either a function declaration or a function expression.
+*/
 
 // TODO: complete program
 
-console.log(calculate(4, "+", 6));  // Must show 10
-console.log(calculate(4, "-", 6));  // Must show -2
-console.log(calculate(2, "*", 0));  // Must show 0
+const calculate = (n1, operation, n2) => {
+	if (operation === "+") {
+		return n1 + n2;
+	} else if (operation === "-") {
+		return n1 - n2;
+	} else if (operation === "*") {
+		return n1 * n2;
+	} else if (operation === "/") {
+		return n1 / n2;
+	} else {
+		return "Not advanced enough yet.";
+	}
+};
+
+console.log(calculate(4, "+", 6)); // Must show 10
+console.log(calculate(4, "-", 6)); // Must show -2
+console.log(calculate(2, "*", 0)); // Must show 0
 console.log(calculate(12, "/", 0)); // Must show Infinity
+
+/*
 Circumference and area of a circle
 Write a program containing two functions to calculate the circumference and area of a circle defined by its radius. Test it using user input.
 
