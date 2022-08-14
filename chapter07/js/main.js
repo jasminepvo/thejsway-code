@@ -48,3 +48,15 @@ console.log(Math.max(...values1));
 List of words
 Write a program that asks the user for a word until the user types "stop". The program then shows each of these words, except "stop".
 */
+const words = [];
+
+let word = "";
+while (word !== "stop") {
+	word = prompt("Give me a word. Say 'stop' when you want to stop");
+	if (word !== "stop") {
+		words.push(word);
+	}
+}
+for (const w of words) {
+	console.log(w);
+}
