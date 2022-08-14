@@ -84,3 +84,5 @@ console.log(account.describe());
 account.credit(250);
 account.credit(-80);
 console.log(account.describe());
+//owner: Alex, balance 0
+//owner: Alex, balance 170
